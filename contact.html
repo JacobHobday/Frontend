@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="page">
+    <head>
+        <meta charset="UTF-8"/> 
+        <meta name="CI435" content="width=device-width, initial-scale=1"/>
+        <title class="spaced"> CI435 </title>
+        <link href="http://fonts.googleapis.com/css?family=Strait" rel="stylesheet">	    
+        <link rel="shortcut icon" href="assets/images/favicon.png"/>
+        <link href="css/normalize.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/main.css"/>
+    </head>
+    <body class="center">
+        <header>
+            <br/>
+            <nav class="spaced" style="list-style-type:none">
+                <a href="index.html">Home</a>
+                <a href="tutorial.html">Tutorial</a>
+            </nav>
+        </header>
+        <h1 class="lesserspaced">Contact</h1>
+        <br/>
+        <a href="mailto:J.Hobday2@uni.brighton.ac.uk">Email Jacob Hobday</a>
+        <br/>
+        <form  id="form1" action="formhandler" method="post">
+            <label for="name">Name <em>(required)</em></label>
+            <input class="field" type="text" id="name"/>
+            <br/>
+            <br/>
+            <label for="email">Email address <em>(required)</em></label>
+            <input class="field" type="email"  id="email"/>
+            <br/>
+            <br/>
+            <fieldset>
+                    <legend>Would you like more information? </legend>
+                    <label for="information-yes">
+                    <input type="radio" id="information-yes" 
+                    name="information" value="yes"> Yes </label>
+                    <label for="information-no">
+                    <input type="radio" id="information-no" 
+                    name="information" value="no" checked> No </label>
+            </fieldset>
+            <br/>
+            <br/>
+            <input class="submit" type="submit" value="Submit" />
+        </form>
+        <br/>
+     </body>
+</html>
